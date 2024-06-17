@@ -1,8 +1,13 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
--- vim.g.ruby_host_prog = "~/.asdf/installs/ruby/3.3.0/bin/neovim-ruby-host"
 vim.g.loaded_perl_provider = 0
+vim.g.ruby_host_prog = "~/.asdf/installs/ruby/3.3.1/lib/ruby/gems/3.3.0/gems/neovim-0.10.0/exe/neovim-ruby-host"
+vim.o.scrolloff = 0
+
+-- fix issue with lines moving after escape with tmux
+vim.opt.timeoutlen = 1000
+vim.opt.ttimeoutlen = 0
 
 -- emmet-language-server setup
 vim.api.nvim_create_autocmd({ "FileType" }, {

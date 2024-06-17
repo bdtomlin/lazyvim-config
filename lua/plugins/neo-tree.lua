@@ -19,6 +19,7 @@ return {
       },
     },
     window = {
+      -- position = "current", -- left, right, top, bottom, float, current
       position = "current", -- left, right, top, bottom, float, current
       width = 40, -- applies to left and right positions
       height = 15, -- applies to top and bottom positions
