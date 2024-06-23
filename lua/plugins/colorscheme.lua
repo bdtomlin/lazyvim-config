@@ -1,16 +1,38 @@
 return {
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
+    "EdenEast/nightfox.nvim",
+    -- lazy = false,
+    -- priority = 1000,
     opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+      options = {
+        transparent = true,
       },
     },
   },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      -- colorscheme = "nightfox",
+      -- colorscheme = "dayfox",
+      -- colorscheme = "dawnfox",
+      -- colorscheme = "duskfox",
+      -- colorscheme = "nordfox",
+      colorscheme = "terafox",
+      -- colorscheme = "carbonfox",
+    },
+  },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     transparent = true,
+  --     styles = {
+  --       sidebars = "transparent",
+  --       floats = "transparent",
+  --     },
+  --   },
+  -- },
   -- { "ellisonleao/gruvbox.nvim", opts = {
   --   transparent_mode = true,
   -- } },
@@ -26,21 +48,5 @@ return {
   --     contrast_dark = "medium", -- 'hard'|'medium'|'soft'
   --     overrides = {}, -- add custom overrides
   --   },
-  -- },
-  -- {
-  --   "sainnhe/sonokai",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     -- Optionally configure and load the colorscheme
-  --     -- directly inside the plugin declaration.
-  --     vim.g.sonokai_enable_italic = true
-  --     vim.cmd.colorscheme("sonokai")
-  --   end,
-  -- {
-  -- },
-  --   "LazyVim/LazyVim",
-  --   opts = {},
-  --   colorscheme = "dracula_pro",
   -- },
 }
