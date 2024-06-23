@@ -6,7 +6,8 @@ local unmap = vim.keymap.del
 local wk = require("which-key")
 
 wk.register({
-  E = { "<cmd>Neotree reveal<cr>", "Explorer Neotree (Reveal)" },
+  e = { "<cmd>Neotree toggle reveal<cr>", "Neotree (Toggle Reveal)" },
+  E = { "<cmd>Neotree toggle<cr>", "Neotree (Toggle)" },
 }, { prefix = "<leader>" })
 
 unmap("n", "<S-h>")
