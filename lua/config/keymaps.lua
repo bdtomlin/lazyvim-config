@@ -20,3 +20,29 @@ map("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { silent = true })
 map("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { silent = true })
 map("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", { silent = true })
 map("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { silent = true })
+
+-- wiki.vim
+wk.register({
+  w = {
+    i = { "<cmd>WikiIndex<cr>", "WikiIndex" },
+    j = { "<cmd>WikiJournal<cr>", "WikiJournal" },
+    t = { "<cmd>WikiTags<cr>", "WikiTags" },
+    r = { "<cmd>WikiTagReload<cr>", "WikiTagReload" },
+    p = { "<cmd>WikiPages<cr>", "WikiPages" },
+    d = { "<cmd>WikiPageDelete<cr>", "WikiPageDelete" },
+  },
+}, { prefix = "<leader>" })
+-- | key        | action         |
+-- |------------|----------------|
+-- | <leader>wi | WikiIndex      |
+-- |------------|----------------|
+-- | <leader>wj | WikiJournal    |
+-- |------------|----------------|
+-- | <leader>wt | WikiTags       |
+-- |------------|----------------|
+-- | <leader>wr | WikiTagReload  |
+-- |------------|----------------|
+-- | <leader>wp | WikiPages      |
+-- |------------|----------------|
+-- | <leader>wd | WikiPageDelete |
+-- |------------|----------------|
