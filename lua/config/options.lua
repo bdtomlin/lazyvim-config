@@ -8,6 +8,7 @@ vim.o.scrolloff = 0
 -- fix issue with lines moving after escape with tmux
 vim.opt.timeoutlen = 1000
 vim.opt.ttimeoutlen = 0
+vim.opt.conceallevel = 0
 
 -- emmet-language-server setup
 vim.api.nvim_create_autocmd({ "FileType" }, {
